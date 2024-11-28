@@ -140,9 +140,9 @@ body {
 
 /* Background fading effect */
 @keyframes fadeBackground {
-    0% { background-image: url('abstract-networking-concept-still-life-arrangement.jpg'); }
-    33.33% { background-image: url('business-scene-top-view.jpg'); }
-    66.66% { background-image: url('hand-button-man-multimedia-mail.jpg'); }
+    0% { background-image: url('home.png'); }
+    33.33% { background-image: url('home.png'); }
+    66.66% { background-image: url('home.png'); }
     100% { background-image: url('home.png'); }
 }
 
