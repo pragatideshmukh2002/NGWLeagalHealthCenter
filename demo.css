@@ -9,28 +9,7 @@ body {
    
 }
 /* logo css */
-/* Default (non-scrolled) navbar styles */
 /* Navbar container styles */
-.navbar {
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column; /* Stack logo and links vertically */
-    align-items: center;
-    padding: 15px 0;
-}
-
-/* Center logo at the top */
-#logo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px; /* Space between logo and navigation links */
-    transition: all 0.3s ease-in-out;
-}
-
-/* Navigation links container */
-/* Navbar container */
 /* Navbar styles */
 .navbar {
     background-color: #ffffff;
@@ -55,14 +34,14 @@ body {
 }
 
 /* Navigation links */
-/* Navigation links */
 .navbar-nav {
     display: flex;
-    flex-direction: column; /* Stack links vertically */
-    gap: 50px; /* Increased space between links */
+    flex-direction: row; /* Display links horizontally on larger screens */
+    gap: 30px; /* Space between links */
     align-items: center; /* Ensure links are centered */
 }
 
+/* Navbar link styling */
 .navbar-nav .nav-item .nav-link {
     text-decoration: none;
     color: #111111;
@@ -70,7 +49,6 @@ body {
     padding: 5px 15px;
     transition: color 0.3s ease;
 }
-
 
 /* On scroll - shrink navbar and logo */
 #navbar.scrolled {
@@ -82,20 +60,57 @@ body {
     height: 40px;
 }
 
+/* Responsive Styling */
 
-
-
-
-/* .navbar a:hover {
-    color: #3964c3;
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .navbar-nav {
+     /* Stack links vertically */
+    gap: 20px; /* Adjust space between links */
+  }
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 16px; /* Adjust text size for smaller screens */
+  }
 }
 
-.navbar-toggler-icon {
-    color: #3964c3;
-} */
+/* For mobile devices (portrait) */
+@media (max-width: 768px) {
+  .navbar-nav {
+    /* Stack links vertically */
+    gap: 15px; /* Adjust space between links */
+    align-items: flex-start; /* Align links to the left */
+  }
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 14px; /* Adjust text size for smaller screens */
+  }
+}
 
-/* Hero Section */
-/* Hero Section */
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  .navbar-nav {
+     /* Stack links vertically */
+    gap: 10px; /* Reduce space between links */
+  }
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 12px; /* Further adjust text size */
+  }
+}
+
+
+
+/* home page */
 /* Hero Section */
 #hero {
     position: relative;
@@ -130,6 +145,7 @@ body {
     border-radius: 5px;
     font-weight: 600;
     font-size: 1rem;
+    border-color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -140,29 +156,25 @@ body {
 
 /* Background fading effect */
 @keyframes fadeBackground {
-    0% { background-image: url('home.png'); }
-    33.33% { background-image: url('home.png'); }
-    66.66% { background-image: url('home.png'); }
-    100% { background-image: url('home.png'); }
+    0% { background-image: url('home1.jpg'); }
+    33.33% { background-image: url('home2.jpg'); }
+    66.66% { background-image: url('home3.jpg'); }
+    100% { background-image: url('home4.jpg'); }
 }
 
 
+
+
+
 /* Compensated Section */
-/* Adjust card size and styling */
-/* Adjust card size and styling */
-/* Adjust card size and layout for 4 cards in a row */
-/* Card Layout Adjustments */
-/* Card Layout */
-/* Card Layout */
-/* Card Layout */
-/* Card Layout */
+
 /* Card Layout */
 .card {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    height: 300px; /* Fixed height for all cards */
+    height: 280px; /* Fixed height for all cards */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Align content properly */
@@ -266,6 +278,10 @@ body {
     margin-bottom: 400px;
     font-size: 0.7rem;
 }
+
+
+
+
 /* About us  */
     .image-card img {
         width: 100%; /* Ensure the image takes up the full width of the container */
@@ -300,6 +316,7 @@ body {
     }
 
 
+    
 /* Image Section */
 #stats-section {
     position: relative;
