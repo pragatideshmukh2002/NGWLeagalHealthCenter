@@ -1,454 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NGW Legal Health Center</title>
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="demo.css">
-</head>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="demo.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
-        <div class="container d-flex flex-column align-items-center">
-            <!-- Logo centered at the top -->
-            <img src="logo.png" alt="Logo" id="logo" class="rounded-pill" />
+      <div class="container d-flex flex-column align-items-center">
+        <!-- Logo centered at the top -->
+        <img src="logo.png" alt="Logo" id="logo" class="rounded-pill" />
     
-            <!-- Navigation links below the logo -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Claim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-            </div>
+        <!-- Navigation links directly visible (no hamburger) -->
+        <div class="navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#floating-btn">Claim</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
     
-    
-    
-    
-    <script>// JavaScript to handle navbar and logo transformations on scroll
-        document.addEventListener("scroll", function () {
-            const navbar = document.getElementById("navbar");
-            const logo = document.getElementById("logo");
-            if (window.scrollY > 50) {
-                navbar.classList.add("scrolled");
-                logo.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-                logo.classList.remove("scrolled");
-            }
-        });
-        
-        
-        </script>
-    
-    
 
+    <script>
+      // JavaScript to handle navbar and logo transformations on scroll
+      document.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        const logo = document.getElementById("logo");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+          logo.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+          logo.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+
+    <!-- home Page -->
     <!-- Hero Section -->
-    <section id="hero" class="d-flex align-items-center justify-content-center text-center">
-        <div class="container">
-            <h1 class="headline">Get the Compensation You Deserve</h1>
-            <p class="byline">Our expert legal team is here to fight for your rights.</p>
-            <a href="#contact-us" class="btn cta-btn">Contact Us</a>
-        </div>
+    <section
+      id="hero"
+      class="d-flex align-items-center justify-content-center text-center"
+    >
+      <div class="container">
+        <h1 class="headline">Faulty Product? Your Compensation Awaits!</h1>
+        <p class="byline">
+          We make claiming what’s rightfully yours simple, quick, and stress-free. Get expert help today!
+        </p>
+        <a href="#contact-us" class="btn cta-btn">Contact Us</a>
+      </div>
     </section>
-    
 
     <!-- Compensated Section -->
     <section id="compensated" class="py-5">
-    <div class="container text-center">
+      <div class="container text-center">
         <h2 class="section-heading">You Should Be Compensated</h2>
 
         <!-- Card Layout -->
         <div class="row justify-content-center">
-            <!-- Card 1 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img src="home.png" alt="Image 1" class="card-img">
-                    <div class="card-body">
-                        <h5 class="card-title">Roundup</h5>
-                    </div>
-                </div>
+          <!-- Card 1 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="roundup.jpg" alt="Image 1" class="card-img" />
+              <div class="card-body">
+                <h5 class="card-title">Roundup</h5>
+              </div>
             </div>
-            <!-- Card 2 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img src="home.png" alt="Image 2" class="card-img">
-                    <div class="card-body">
-                        <h5 class="card-title">NEC</h5>
-                    </div>
-                </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="nec.jpg" alt="Image 2" class="card-img" />
+              <div class="card-body">
+                <h5 class="card-title">NEC</h5>
+              </div>
             </div>
-            <!-- Card 3 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img src="home.png" alt="Image 3" class="card-img">
-                    <div class="card-body">
-                        <h5 class="card-title">Hair Relaxer</h5>
-                    </div>
-                </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="hair.jpg" alt="Image 3" class="card-img" />
+              <div class="card-body">
+                <h5 class="card-title">Hair Relaxer</h5>
+              </div>
             </div>
-            <!-- Card 4 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img src="home.png" alt="Image 4" class="card-img">
-                    <div class="card-body">
-                        <h5 class="card-title">AFFF</h5>
-                    </div>
-                </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="afff.jpg" alt="Image 4" class="card-img" />
+              <div class="card-body">
+                <h5 class="card-title">AFFF</h5>
+              </div>
             </div>
+          </div>
         </div>
 
         <div class="row justify-content-center">
-            <!-- Card 5 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img src="home.png" alt="Image 5" class="card-img">
-                    <div class="card-body">
-                        <h5 class="card-title">Ride Share</h5>
-                    </div>
-                </div>
+          <!-- Card 5 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="ride.png" alt="Image 5" class="card-img" />
+              <div class="card-body">
+                <h5 class="card-title">Ride Share</h5>
+              </div>
             </div>
-            <!-- Card 6 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img src="home.png" alt="Image 6" class="card-img">
-                    <div class="card-body">
-                        <h5 class="card-title">Talcum Powder</h5>
-                    </div>
-                </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="talcum.jpg" alt="Image 6" class="card-img" />
+              <div class="card-body">
+                <h5 class="card-title">Talcum Powder</h5>
+              </div>
             </div>
-            <!-- Card 7 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img src="home.png" alt="Image 7" class="card-img">
-                    <div class="card-body">
-                        <h5 class="card-title">Depo-Provera</h5>
-                    </div>
-                </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="depo.jpg" alt="Image 7" class="card-img" />
+              <div class="card-body">
+                <h5 class="card-title">Depo-Provera</h5>
+              </div>
             </div>
+          </div>
         </div>
 
         <!-- CTA Button at the Bottom -->
         <div class="row justify-content-center mt-4">
-            <a href="#" class="btn custom-btn btn-lg">Get Compensated Now</a>
+          <a href="#" class="btn custom-btn btn-lg">Get Compensated Now</a>
         </div>
-    </div>
-</section>
-    
-    
-    
-    
-    
-    
-      
-    <!-- Bootstrap JS (for carousel functionality) -->
-
-<!-- Bootstrap JS (for carousel functionality) -->
+      </div>
+    </section>
 
 
 
 
     <!-- Why Choose Us Section -->
     <section id="why-choose-us" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="section-heading">Why Choose Us?</h2>
-            <div class="row">
-                <!-- Card 1 -->
-                <div class="col-md-4">
-                    <div class="card custom-card">
-                        <div class="card-body">
-                            <div class="circle-logo" style="background-image: url('logo.png');"></div>
-                            <h5 class="card-title">Expert Team</h5>
-                            <p class="card-text">Our team is highly skilled and experienced in dealing with complex cases.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-4">
-                    <div class="card custom-card">
-                        <div class="card-body">
-                            <div class="circle-logo" style="background-image: url('logo.png');"></div>
-                            <h5 class="card-title">Client Focused</h5>
-                            <p class="card-text">We put our clients first, ensuring personalized legal support throughout your case.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-4">
-                    <div class="card custom-card">
-                        <div class="card-body">
-                            <div class="circle-logo" style="background-image: url('logo.png');"></div>
-                            <h5 class="card-title">Proven Results</h5>
-                            <p class="card-text">We have a strong track record of securing positive outcomes for our clients.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container text-center">
+        <h2 class="section-heading">Why Choose Us?</h2>
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card custom-card">
+              <div class="card-body">
+                <div
+                  class="circle-logo"
+                  style="background-image: url('logo.png')"
+                ></div>
+                <h5 class="card-title">Guaranteed Claim Success</h5>
+                <p class="card-text">
+                  Our experts ensure every step is optimized to secure the compensation you deserve.
+                </p>
+              </div>
             </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card custom-card">
+              <div class="card-body">
+                <div
+                  class="circle-logo"
+                  style="background-image: url('logo.png')"
+                ></div>
+                <h5 class="card-title">Simplified Process</h5>
+                <p class="card-text">
+                  No legal jargon, just a clear, user-friendly process designed for your convenience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card custom-card">
+              <div class="card-body">
+                <div
+                  class="circle-logo"
+                  style="background-image: url('logo.png')"
+                ></div>
+                <h5 class="card-title">Expert Team</h5>
+                <p class="card-text">
+                  With years of experience and a commitment to excellence, our specialists handle your case with care and precision.  
+
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+
 
     <!-- About Us Section -->
     <section id="about-us" class="py-3">
-        <div class="container">
-            <!-- Heading Section -->
-            <div class="text-center mb-3">
-                <h2 class="section-heading text-uppercase">About Us</h2>
-            </div>
-    
-            <div class="row">
-                <!-- Image Card (Left) -->
-                <div class="col-md-6">
-                    <div class="card image-card">
-                        <img src="home.png" alt="About Image" class="card-img">
-                    </div>
-                </div>
-                <!-- Text Card (Right) -->
-                <div class="col-md-6">
-                    <div class="card text-card" >
-                        <div class="card-body">
-                            <h3 class="card-title">About NGW Legal Health Center</h3>
-                            <p class="card-text">We are a dedicated team of lawyers specializing in personal injury cases. Our goal is to ensure that individuals who have been wronged by negligence receive the justice and compensation they deserve. We offer a no-win, no-fee guarantee, meaning you don't pay unless we win your case.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <!-- Heading Section -->
+        <div class="text-center mb-3">
+          <h2 class="section-heading text-uppercase">About Us</h2>
         </div>
+        <div class="row">
+          <!-- Image Card (Left) -->
+          <div class="col-md-6">
+            <div class="card image-card">
+              <img src="about.jpg" alt="About Image" class="card-img" />
+            </div>
+          </div>
+          <!-- Text Card (Right) -->
+          <div class="col-md-6">
+            <div class="card text-card">
+              <div class="card-body">
+                <h3 class="card-title">About NGW Legal Health Center</h3>
+                <p class="card-text">
+                  At NGWLegalHealth, we specialize in helping individuals claim compensation for damages caused by faulty products. Our team of legal and claims experts works tirelessly to ensure you receive the justice you deserve.
+
+                  Filing a claim with us is simple, efficient, and guarantees results. We handle the complexities so you don’t have to, ensuring your rights are protected and your compensation is secured.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    
-    
-    
+
     <!-- Image Section -->
     <section id="stats-section" class="py-5">
-        <div class="stats-background">
-            <div class="container text-center text-white">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="stat-item">
-                            <h2 id="claims-count" class="stat-number">0</h2>
-                            <p>Claims Completed</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="stat-item">
-                            <h2 id="experience-count" class="stat-number">0</h2>
-                            <p>Years of Experience</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="stat-item">
-                            <h2 id="law-firms-count" class="stat-number">0</h2>
-                            <p>Law Firm Tie-ups</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="stat-item">
-                            <h2 id="team-count" class="stat-number">0</h2>
-                            <p>Team Members</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="stats-background">
+        <div class="container text-center text-white">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="stat-item">
+                <h2 id="claims-count" class="stat-number">0</h2>
+                <p>Claims Completed</p>
+              </div>
             </div>
+            <div class="col-md-3">
+              <div class="stat-item">
+                <h2 id="experience-count" class="stat-number">0</h2>
+                <p>Years of Experience</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="stat-item">
+                <h2 id="law-firms-count" class="stat-number">0</h2>
+                <p>Law Firm Tie-ups</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="stat-item">
+                <h2 id="team-count" class="stat-number">0</h2>
+                <p>Team Members</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section><script>
-    function animateNumbers(id, target) {
-    let current = 0;
-    const increment = target / 100; // Adjust speed by changing the divisor
-    const interval = setInterval(() => {
-        current += increment;
-        if (current >= target) {
+      </div>
+    </section>
+    <script>
+      function animateNumbers(id, target) {
+        let current = 0;
+        const increment = target / 100; // Adjust speed by changing the divisor
+        const interval = setInterval(() => {
+          current += increment;
+          if (current >= target) {
             current = target;
             clearInterval(interval);
+          }
+          document.getElementById(id).innerText = `${Math.floor(current)}+`; // Add "+" after the number
+        }, 20); // Adjust interval speed for smoother animation
+      }
+
+      function handleScroll() {
+        const statsSection = document.getElementById("stats-section");
+        const sectionTop = statsSection.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (sectionTop < screenHeight) {
+          animateNumbers("claims-count", 10000);
+          animateNumbers("experience-count", 5);
+          animateNumbers("law-firms-count", 25);
+          animateNumbers("team-count", 200);
+          window.removeEventListener("scroll", handleScroll); // Ensure animation runs only once
         }
-        document.getElementById(id).innerText = `${Math.floor(current)}+`; // Add "+" after the number
-    }, 20); // Adjust interval speed for smoother animation
-}
+      }
 
-function handleScroll() {
-    const statsSection = document.getElementById('stats-section');
-    const sectionTop = statsSection.getBoundingClientRect().top;
-    const screenHeight = window.innerHeight;
-
-    if (sectionTop < screenHeight) {
-        animateNumbers('claims-count', 10000);
-        animateNumbers('experience-count', 5);
-        animateNumbers('law-firms-count', 25);
-        animateNumbers('team-count', 200);
-        window.removeEventListener('scroll', handleScroll); // Ensure animation runs only once
-    }
-}
-
-window.addEventListener('scroll', handleScroll);
-
-    
+      window.addEventListener("scroll", handleScroll);
     </script>
 
 
-    
+    <!-- contact form -->
     <!-- Floating Button at the bottom right -->
-  
-    
     <!-- Popup Form (Initially Hidden) -->
     <div id="popup-form" class="popup-form">
-        <div class="popup-content">
-            <span id="close-btn" class="close-btn" onclick="closeForm()">×</span>
-            <h2 class="text-center text-white mb-4">Claim your compensation</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name" class="text-white">Name</label>
-                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="number" class="text-white">Number</label>
-                    <input type="number" id="number" class="form-control" placeholder="Enter your number" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="email" class="text-white">Email</label>
-                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="address" class="text-white">Address</label>
-                    <input type="text" id="address" class="form-control" placeholder="Enter your address" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="dob" class="text-white">DOB</label>
-                    <input type="date" id="dob" class="form-control" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="product-used" class="text-white">Product Used?</label>
-                    <select id="product-used" class="form-control" required>
-                        <option value="roundup">Roundup</option>
-                        <option value="talcum">Talcum powder</option>
-                        <option value="afff">Afff</option>
-                        <option value="hair-relaxer">Hair relaxer</option>
-                        <option value="depo-provera">Depo-Provera</option>
-                        <option value="nec">NEC</option>
-                        <option value="ride-share">Ride share</option>
-                    </select>
-                </div>
-    
-                <div class="form-group">
-                    <label for="diagnosis" class="text-white">Diagnosis</label>
-                    <input type="text" id="diagnosis" class="form-control" placeholder="Enter diagnosis" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="diagnosed-date" class="text-white">Diagnosed Date</label>
-                    <input type="date" id="diagnosed-date" class="form-control" required>
-                </div>
-    
-                <div class="form-group">
-                    <label class="text-white">Do you have any Attorney?</label>
-                    <div class="form-check">
-                        <input type="radio" id="attorney-yes" name="attorney" class="form-check-input" value="yes" required>
-                        <label for="attorney-yes" class="form-check-label text-white">Yes</label>
-                        <input style="margin-left: 10px;" type="radio" id="attorney-no" name="attorney" class="form-check-input" value="no" required>
-                        <label style="margin-left: 30px;" for="attorney-no" class="form-check-label text-white" >No</label>
-                   
-                    </div>
-                    <!-- <div class="form-check">
-                        <input type="radio" id="attorney-no" name="attorney" class="form-check-input" value="no" required>
-                        <label for="attorney-no" class="form-check-label text-white">No</label>
-                    </div> -->
-                </div>
-    
-                <div class="form-group">
-                    <label for="additional-info" class="text-white">Additional Information</label>
-                    <textarea id="additional-info" class="form-control" placeholder="Any additional information" rows="3"></textarea>
-                </div>
-    
-                <div class="form-group text-center">
-                    <button type="submit" class="btn btn-light">Submit</button>
-                </div>
-            </form>
-        </div>
-    </div><div id="floating-btn" class="floating-btn">
-        <button onclick="openForm()">CLAIM NOW</button>
+      <div class="popup-content">
+        <span id="close-btn" class="close-btn" onclick="closeForm()">×</span>
+        <h2 class="text-center text-white mb-4">Claim your compensation</h2>
+        <form>
+          <div class="form-group">
+            <label for="name" class="text-white">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="number" class="text-white">Number</label>
+            <input
+              type="number"
+              id="number"
+              class="form-control"
+              placeholder="Enter your number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" class="text-white">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="address" class="text-white">Address</label>
+            <input
+              type="text"
+              id="address"
+              class="form-control"
+              placeholder="Enter your address"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="dob" class="text-white">DOB</label>
+            <input type="date" id="dob" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="product-used" class="text-white">Product Used?</label>
+            <select id="product-used" class="form-control" required>
+              <option value="roundup">Roundup</option>
+              <option value="talcum">Talcum powder</option>
+              <option value="afff">Afff</option>
+              <option value="hair-relaxer">Hair relaxer</option>
+              <option value="depo-provera">Depo-Provera</option>
+              <option value="nec">NEC</option>
+              <option value="ride-share">Ride share</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="diagnosis" class="text-white">Diagnosis</label>
+            <input
+              type="text"
+              id="diagnosis"
+              class="form-control"
+              placeholder="Enter diagnosis"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="diagnosed-date" class="text-white"
+              >Diagnosed Date</label
+            >
+            <input
+              type="date"
+              id="diagnosed-date"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="text-white">Do you have any Attorney?</label>
+            <div class="form-check">
+              <input
+                type="radio"
+                id="attorney-yes"
+                name="attorney"
+                class="form-check-input"
+                value="yes"
+                required
+              />
+              <label for="attorney-yes" class="form-check-label text-white">Yes</label>
+              <input
+                style="margin-left: 10px"
+                type="radio"
+                id="attorney-no"
+                name="attorney"
+                class="form-check-input"
+                value="no"
+                required 
+                />
+              <label
+                style="margin-left: 30px"
+                for="attorney-no"
+                class="form-check-label text-white"
+                >No</label>
+            </div>    
+          </div>
+          <div class="form-group">
+            <label for="additional-info" class="text-white"
+              >Additional Information</label>
+            <textarea
+              id="additional-info"
+              class="form-control"
+              placeholder="Any additional information"
+              rows="3"></textarea>
+          </div>
+
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-light">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
-    
+    <div id="floating-btn" class="floating-btn">
+      <button onclick="openForm()">CLAIM NOW</button>
+    </div>
+
     <!-- Popup Form (Initially Hidden) -->
     <div id="popup-form" class="popup-form">
-        <div class="popup-content">
-            <span id="close-btn" class="close-btn" onclick="closeForm()">×</span>
-            <h2 class="text-center text-white mb-4">Claim your compensation</h2>
-            <form>
-                <!-- Form fields here... -->
-            </form>
-        </div>
+      <div class="popup-content">
+        <span id="close-btn" class="close-btn" onclick="closeForm()">×</span>
+        <h2 class="text-center text-white mb-4">Claim your compensation</h2>
+        <form>
+          <!-- Form fields here... -->
+        </form>
+      </div>
     </div>
-    
+
     <script>
-        // Open the Popup Form
-        function openForm() {
-            document.getElementById("popup-form").style.display = "block";
-        }
-        
-        // Close the Popup Form
-        function closeForm() {
-            document.getElementById("popup-form").style.display = "none";
-        }
+      // Open the Popup Form
+      function openForm() {
+        document.getElementById("popup-form").style.display = "block";
+      }
+
+      // Close the Popup Form
+      function closeForm() {
+        document.getElementById("popup-form").style.display = "none";
+      }
     </script>
-    
+
     <script>
-        // Open the Popup Form
-        function openForm() {
-            document.getElementById("popup-form").style.display = "block";
-        }
-        
-        // Close the Popup Form
-        function closeForm() {
-            document.getElementById("popup-form").style.display = "none";
-        }
+      // Open the Popup Form
+      function openForm() {
+        document.getElementById("popup-form").style.display = "block";
+      }
+
+      // Close the Popup Form
+      function closeForm() {
+        document.getElementById("popup-form").style.display = "none";
+      }
     </script>
-    
-    
-    
-    
-    
-    
-    
+
 
 
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <!-- Left Side: Logo -->
-            <div class="footer-logo mb-4 mb-md-0">
-                <img src="footerlogo.png" alt="NGW Legal Health Center Logo" class="img-fluid" style="max-height: 250px;">
-            </div>
-    
-            <!-- Right Side: Contact Details -->
-            <div class="footer-contact text-center text-md-end">
-                <a href="mailto:ngwlegalhealthcenter@gmail.com" class="text-white d-block mb-2">ngwlegalhealthcenter@gmail.com</a>
-                <a href="tel:+1234567890" class="text-white d-block mb-2">+1 234 567 890</a>
-                <a href="https://www.ngwlegalhealth.com" class="text-white d-block">NGW Legal Health Center</a>
-            </div>
+    <footer id="contact" class="bg-dark text-white py-5">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <!-- Left Side: Logo -->
+        <div class="footer-logo mb-4 mb-md-0">
+          <img
+            src="footerlogo.png"
+            alt="NGW Legal Health Center Logo"
+            class="img-fluid"
+            style="max-height: 250px"
+          />
         </div>
+
+        <!-- Right Side: Contact Details -->
+        <div class="footer-contact text-center text-md-end">
+          <a
+            href="mailto:ngwlegalhealthcenter@gmail.com"
+            class="text-white d-block mb-2"
+            >ngwlegalhealthcenter@gmail.com</a>
+          <a href="tel:+1234567890" class="text-white d-block mb-2">
+            +1 3104005372
+          </a>
+          <a href="https://www.ngwlegalhealth.com" class="text-white d-block">
+            NGW Legal Health Center
+          </a>
+        </div>
+      </div>
     </footer>
-    
-    
+
     <!-- Bootstrap JS, Popper.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
