@@ -281,39 +281,110 @@ body {
 
 
 
+/* About Us Section Responsive */
 
-/* About us  */
-    .image-card img {
-        width: 100%; /* Ensure the image takes up the full width of the container */
-        height: auto;
-        border-radius: 8px; /* Optional: to round the corners of the image */
+/* General Styles */
+.image-card img {
+    width: 100%; /* Full width for responsiveness */
+    height: auto;
+    display: flex;
+    border-radius: 8px;
+}
+
+.text-card {
+    background-color: #f9f9f9; /* Light background color for the text card */
+    border-radius: 8px;
+}
+
+.image-card {
+    margin-bottom: 30px; /* Space below the image */
+}
+
+.text-card {
+    margin-top: 200px; /* Default top margin for larger screens */
+}
+
+.card-title {
+    margin-bottom: 0; /* Remove the bottom margin of the title */
+}
+
+.card-text {
+    margin-top: 0; /* Ensure there’s no extra space at the top of the text */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Mobile (up to 576px) */
+@media (max-width: 576px) {
+    .row {
+        display: flex;
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center; /* Center align the items */
     }
-    
-    .text-card {
-        background-color: #f9f9f9; /* Optional: Light background color for the text card */
-        border-radius: 8px;
-    }
-    
+
     .image-card {
-        margin-bottom: 30px; /* Adjust this value to control how much higher the image is */
+        margin-bottom: 20px; /* Reduce space below image */
+        order: -1; /* Ensure image appears on top */
     }
 
-    /* Adjusts the text card position, pushing it down */
     .text-card {
-        margin-top: 200px; /* Move the text card lower to align with the image */
+        margin-top: 0; /* Remove extra top margin for smaller screens */
+        order: 0; /* Text appears below the image */
+    }
+
+    .card-body {
+        padding: 15px; /* Adjust padding */
     }
 
     .card-title {
-        margin-bottom: 0; /* Remove the bottom margin of the title */
+        font-size: 1rem; /* Adjust font size for titles */
     }
-    
+
     .card-text {
-        margin-top: 0; /* Ensure there’s no extra space at the top of the text */
+        font-size: 0.9rem; /* Smaller text for readability on small screens */
     }
-    
+}
+
+/* Tablet (576px to 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .image-card {
+        margin-bottom: 25px; /* Adjust margin */
+    }
+
+    .text-card {
+        margin-top: 50px; /* Reduce top margin */
+    }
+
     .card-body {
-        padding: 20px;
+        padding: 18px; /* Slightly adjust padding */
     }
+
+    .card-title {
+        font-size: 1.5rem; /* Adjust title font size */
+    }
+
+    .card-text {
+        font-size: 1rem; /* Adjust text font size */
+    }
+}
+
+/* Laptops and Desktops (above 768px) */
+@media (min-width: 768px) {
+    .text-card {
+        margin-top: 150px; /* Fine-tuned top margin for larger screens */
+    }
+
+    .card-title {
+        font-size: 1.5rem; /* Larger font size for title */
+    }
+
+    .card-text {
+        font-size: 1rem; /* Adjust text size for readability */
+    }
+}
+
 
 
     
@@ -325,7 +396,7 @@ body {
 }
 
 .stats-background {
-    background-image: url('home.png'); /* Replace with the path to your image */
+    background-image: url('pillers.jpg'); /* Replace with the path to your image */
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -376,31 +447,41 @@ body {
     }
 
     .stats-background {
-        background-size: 100% 100%; /* Adjust background image size */
-        height: auto; /* Allow the section to expand based on content */
+        background-size: cover; /* Maintain aspect ratio and adjust background */
+        background-position: center; /* Keep the focus on the center */
+        height: auto; /* Expand based on content */
     }
 
     .container {
-        padding: 0 15px; /* Reduce padding */
+        padding: 0 15px; /* Reduce padding for mobile */
     }
 
     .stat-item {
-        margin-bottom: 20px; /* Add space between stats on mobile */
-        padding: 0 10px; /* Add padding for better spacing */
+        margin-bottom: 10px; /* Reduce spacing between items */
+        padding: 0 5px; /* Add smaller padding for better spacing */
     }
 
     .stat-number {
-        font-size: 2.5rem; /* Smaller font size on mobile */
+        font-size: 2rem; /* Adjust font size for numbers on mobile */
+        font-weight: bold; /* Emphasize numbers */
     }
 
     .stat-item p {
-        font-size: 1rem; /* Adjust text size */
+        font-size: 0.9rem; /* Adjust description text size for mobile */
+        font-weight: 500; /* Maintain boldness for clarity */
     }
 
     .row {
-        display: block; /* Stack the items vertically */
+        display: flex; /* Keep items horizontally aligned */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        justify-content: flex-start; /* Align items to the left */
+        align-items: center; /* Align vertically in the center */
+        gap: 10px; /* Add a smaller gap between items */
+        overflow-x: auto; /* Enable horizontal scrolling if needed */
+        padding: 10px 0; /* Add vertical padding for a clean layout */
     }
 }
+
 
 /* Tablet (576px to 768px) */
 @media (min-width: 576px) and (max-width: 768px) {
